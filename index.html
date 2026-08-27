@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>to the one who holds my heart</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="access-gate" id="accessGate" aria-labelledby="accessTitle">
+		<div class="access-card">
+			<p class="eyebrow">a little secret first</p>
+			<h1 id="accessTitle">Hi, baby.<br><em>I love you.</em></h1>
+			<p>Enter the magic words to open your birthday surprise.</p>
+			<form id="accessForm">
+				<label for="accessCode">Your answer</label>
+				<div class="access-input-row">
+					<input id="accessCode" name="accessCode" type="text" autocomplete="off" required aria-describedby="accessError">
+					<button type="submit">Open it</button>
+				</div>
+				<p class="access-error" id="accessError" role="alert" hidden>Almost. Try again, baby.</p>
+			</form>
+		</div>
+	</section>
+	<div class="page-glow page-glow--blue"></div>
+	<div class="page-glow page-glow--pink"></div>
+	<header class="topbar">
+		<a class="wordmark" href="#top" aria-label="Back to the birthday message">for my <span>favorite</span> person</a>
+		<div class="countdown" aria-live="polite" aria-label="Countdown to August 28, 2026">
+			<span class="countdown-label">special day loading...</span>
+			<div class="countdown-units">
+				<span><strong id="countdownDays">00</strong><small>days</small></span>
+				<span><strong id="countdownHours">00</strong><small>hrs</small></span>
+				<span><strong id="countdownMinutes">00</strong><small>min</small></span>
+				<span><strong id="countdownSeconds">00</strong><small>sec</small></span>
+			</div>
+		</div>
+	</header>
+
+	<main id="top">
+		<section class="hero" aria-labelledby="birthday-title">
+			<div class="hero-copy">
+				<p class="eyebrow"><span class="eyebrow-line"></span> 08.28.26 <span class="eyebrow-line"></span></p>
+				<h1 id="birthday-title">Happy birthday,<br><em>my love.</em></h1>
+				<p class="hero-text"> "I made you a little something today just to bring a smile to your face. You deserve a great day, and I hope this small surprise reminds you how much I love and appreciate you!"</p>
+				<a class="scroll-cue" href="#little-things"><span class="scroll-arrow">↓</span> scroll down, baby.</a>
+			</div>
+
+			<div class="cake-scene" aria-label="A birthday cake with a candle">
+				<div class="cake-sparkle sparkle-one">✦</div>
+				<div class="cake-sparkle sparkle-two">✦</div>
+				<div class="cake-plate"></div>
+				<div class="cake cake-bottom"><span></span><span></span><span></span></div>
+				<div class="cake cake-top"><i></i><i></i><i></i></div>
+				<button class="candle-button" id="candleButton" aria-label="Tap the candle to make a wish">
+					<span class="flame" id="flame"></span><span class="candle-stick"></span>
+				</button>
+				<p class="wish-label">tap to make a wish</p>
+			</div>
+		</section>
+
+		<section class="wish-message" id="wishMessage" aria-live="polite">
+			<span class="wish-star">✦</span>
+			<p>Wishing you the world today, because you're already the whole world to me.</p>
+			<span class="wish-star">✦</span>
+		</section>
+		<section class="surprises" id="little-things" aria-labelledby="surprises-title">
+			<div class="section-heading">
+				<p class="eyebrow">four little envelopes</p>
+				<h2 id="surprises-title">READ EVERYTHING</h2>
+				<p>There’s something sweet inside each one.</p>
+			</div>
+			<div class="card-grid">
+				<button class="love-card card-pink" data-modal="letterModal"><span class="envelope-flap"></span><span class="envelope-seal">♡</span><span class="card-number">01</span><span class="card-icon">♡</span><strong>A heartfelt<br>love letter</strong><small>open me gently ↗</small></button>
+				<button class="love-card card-blue" data-modal="loveModal"><span class="envelope-flap"></span><span class="envelope-seal">✦</span><span class="card-number">02</span><span class="card-icon">✦</span><strong>Things I<br>love about you</strong><small>a few of many ↗</small></button>
+				<button class="love-card card-yellow" data-modal="songsModal"><span class="envelope-flap"></span><span class="envelope-seal">♫</span><span class="card-number">03</span><span class="card-icon">♫</span><strong>Songs that<br>remind me of you</strong><small>press play ↗</small></button>
+				<button class="love-card card-lilac" data-modal="reminderModal"><span class="envelope-flap"></span><span class="envelope-seal">&#128008;&#8205;&#11035;</span><span class="card-number">04</span><span class="card-icon">&#128008;&#8205;&#11035;</span><strong>Things I want<br>to remind you</strong><small>mwa ↗</small></button>
+			</div>
+		</section>
+
+		<section class="music-player" aria-label="Now playing Spotify track">
+			<div class="album-art"><img src="profile.jpg" alt="A portrait" /></div>
+			<div class="track-info"><span>now playing</span><strong>Nothing</strong><small>Bruno Major</small></div>
+			<div class="player-controls" aria-label="Playback controls">
+				<button class="skip-button" type="button" aria-label="Previous song">◀◀</button>
+			<button class="play-button" id="playButton" aria-label="Play Nothing by Bruno Major">▶</button>
+				<button class="skip-button" type="button" aria-label="Next song">▶▶</button>
+			</div>
+			<iframe title="Nothing by Bruno Major on Spotify" src="https://open.spotify.com/embed/track/1lORkxEMmsCZqhoxcmk3A3?utm_source=generator&theme=0&autoplay=1" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="eager"></iframe>
+		</section>
+	</main>
+
+	<footer>i love you so much. i hope you like what i made.<span>♡</span></footer>
+
+	<div class="stardust" id="stardust" aria-hidden="true"></div>
+	<div class="modal-backdrop" id="modalBackdrop" hidden>
+		<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+			<button class="close-modal" id="closeModal" aria-label="Close">×</button>
+			<p class="eyebrow" id="modalKicker">a little something</p>
+			<h2 id="modalTitle"></h2>
+			<div id="modalContent"></div>
+		</div>
+	</div>
+	<section class="soft-spot-message" id="softSpotMessage" aria-live="polite" aria-hidden="true">
+		<p>i got a soft spot for you....</p>
+	</section>
+	<section class="pretty-boy-message" id="prettyBoyMessage" aria-live="polite" aria-hidden="true">
+		<p></p>
+	</section>
+	<section class="last-day-message" id="lastDayMessage" aria-live="polite" aria-hidden="true">
+		<p></p>
+	</section>
+	<div class="hearts" id="hearts" aria-hidden="true"></div>
+	<script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+	<script src="script.js"></script>
+</body>
+</html>
